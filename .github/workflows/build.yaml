@@ -39,7 +39,7 @@ jobs:
       - name: Build game
         run: npm run dendry make-html
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'out/html'
       - name: Deploy to GitHub Pages
